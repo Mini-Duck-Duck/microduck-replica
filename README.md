@@ -55,6 +55,11 @@ MJCF 里包含了完整的运动学树：每个零件挂在谁身上、相对位
   过期了请开个 <a href="https://github.com/fanhao375/microduck-replica/issues">issue</a> 说一声，我会换上新的</sub>
 </div>
 
+## 飞特电机购买
+为了方便小伙伴采购，这里有一个价格非常亲民的拼多多链接，可供下单。
+https://mobile.yangkeduo.com/goods1.html?goods_id=1009670412032&page_from=0&pxq_secret_key=PCWCCAIB3NFSZXVFJKCSCLXQQGQTEHJ2E3QHAUDVNYPPUB7WHPYA&_oak_share_snapshot_num=9200&_oak_share_time=1790400589&_oak_share_ticket=01-0000000029-21e2239e01cabfceeb3ab678b44d3fa05787bb72a67cf105576a9708881a44c4-1791696591&share_uin=HMLI724YXIWHGJPVWP632HGU2M_GEXDA
+</div>。
+
 ## 最近更新
 
 **IMU 姿态接入调试台**：[`tools/servo-web/`](tools/servo-web/) 可选接入 J-Link，在同一个 3D 鸭子上显示舵机关节角与 IMU 躯干姿态。配套固件在 [`hardware/imu_to_dxl/firmware/`](hardware/imu_to_dxl/firmware/)，**0.2.0 已改成飞特协议**（ID 200、地址 56、15 字节），电脑上验收全过，等整机上真总线实测；没有 J-Link 也能用 ST-Link / DAPLink（`--imu-swd`）或直接走舵机总线（`--imu-bus`）看姿态。
